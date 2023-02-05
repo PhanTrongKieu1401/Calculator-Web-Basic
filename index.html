@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Máy tính bỏ túi</title>
+        <link rel="stylesheet" type="text/css" href="calculator.css">
+    </head>
+    <form id="calculator">
+        <h1>Calculator</h1>
+        <table>
+            <tr>
+                <td colspan="4">
+                    <label for="fnumber" class="label">First number:</label><br>
+                    <input type="text" class="display" id="display1"><br>
+                    <label for="snumber" class="label">Second number:</label><br>
+                    <input type="text" class="display" id="display2"><br>
+                    <label for="math operations" class="label">Math operations:</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button" name="plus" value="+" onclick="myfunctionplus()"></td>
+                <td><input type="button" class="button" name="minus" value="-" onclick="myfunctionminus()"></td>
+                <td><input type="button" class="button" name="multiply" value="*" onclick="myfunctionmultiply()"></td>
+                <td><input type="button" class="button" name="div" value="/" onclick="myfunctiondiv()"></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <label for="lanswer" class="label">Answer:</label><br>
+                    <input type="text" class="display" id="answer" disabled>
+                </td>
+            </tr>	
+        </table>
+    </form>
+    <body>
+        <script src="calculator.js"></script>
+    </body>
+</html>
+
